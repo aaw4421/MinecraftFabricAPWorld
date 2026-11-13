@@ -525,7 +525,7 @@ option_groups = [
         [GoalCondition, AdvancementsRequiredToGoal, ExcludedLocationTypes, RubyPercentageNeeded, TotalRubiesInGame]
     ),
     OptionGroup(
-        "Itemsanty Options",
+        "Itemsanity Options",
         [Itemsanity, ItemsRequiredToGoal, ItemsanityLocationPercentage, ItemsanityLocalFill, ExcludedFromItemsanity, EmptyFillPercentage]
     ),
     OptionGroup(
