@@ -281,6 +281,18 @@ class ShouldHaveBeforeRaids(DifficultyOption):
 # General Options ######################################################################################################
 ########################################################################################################################
 
+class IcarusMode(Toggle):
+    """
+    Gives players an Unbreakable Elytra and 64 Firework Rockets at the start of the game, which 
+    significantly speeds up early exploration.
+    
+    With the Ability Shuffle setting, Elytra flight will be disabled until Jumping, Sprinting, and 
+    Swimming are unlocked.
+    """
+    display_name = "Icarus Mode"
+    default = False
+
+
 class KeepInventory(Toggle):
     """
     Prevents you from dropping your items when you die!
@@ -498,6 +510,7 @@ class FMCOptions(PerGameCommonOptions):
     required_before_nether: ShouldHaveBeforeNetherAccess
     required_before_bosses: ShouldHaveBeforeWitherOrDragon
     required_before_raids: ShouldHaveBeforeRaids
+    icarus_mode: IcarusMode
     keep_inventory: KeepInventory
     randomized_abilities: RandomizedAbilities
     time_saving_options: TimeSavingOptions
@@ -530,7 +543,7 @@ option_groups = [
     ),
     OptionGroup(
         "Difficulty Options",
-        [ShouldHaveBeforeNetherAccess, ShouldHaveBeforeWitherOrDragon, ShouldHaveBeforeRaids, KeepInventory, RandomizedAbilities, TimeSavingOptions, LogicDifficultyOptions]
+        [ShouldHaveBeforeNetherAccess, ShouldHaveBeforeWitherOrDragon, ShouldHaveBeforeRaids, IcarusMode, KeepInventory, RandomizedAbilities, TimeSavingOptions, LogicDifficultyOptions]
     ),
     OptionGroup(
         "Traps Options",
