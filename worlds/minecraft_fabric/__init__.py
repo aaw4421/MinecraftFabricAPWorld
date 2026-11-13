@@ -62,6 +62,7 @@ class FabricMinecraftWorld(World):
             "deathlink": self.options.deathlink_enabled.value,
             "traplink": self.options.traplink_enabled.value,
             # Other Options
+            "icarus_mode": self.options.icarus_mode.value,
             "keep_inventory": self.options.keep_inventory.value,
             "itemsanity": self.options.itemsanity.value,
 
