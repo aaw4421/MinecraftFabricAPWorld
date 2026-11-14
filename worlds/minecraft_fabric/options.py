@@ -284,7 +284,8 @@ class ShouldHaveBeforeRaids(DifficultyOption):
 class IcarusMode(Toggle):
     """
     Gives players an Unbreakable Elytra and 64 Firework Rockets at the start of the game, which 
-    significantly speeds up early exploration.
+    significantly speeds up early exploration. This Elytra will NOT trigger the Sky's the Limit
+    advancement, which will still require finding a normal Elytra.
     
     With the Ability Shuffle setting, Elytra flight will be disabled until Jumping, Sprinting, and 
     Swimming are unlocked.
